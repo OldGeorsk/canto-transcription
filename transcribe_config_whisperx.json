@@ -1,0 +1,43 @@
+{
+  "model": "large-v3",
+  "compute_type": "float16",
+  "batch_size": 16,
+  "chunk_size": 20,
+  "language": "yue",
+  "device": "cuda",
+  "asr_options": {
+    "condition_on_previous_text": false,
+    "without_timestamps": true,
+    "word_timestamps": false,
+    "temperatures": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "beam_size": 5,
+    "best_of": 5,
+    "patience": 1,
+    "length_penalty": 1,
+    "repetition_penalty": 1,
+    "no_repeat_ngram_size": 0,
+    "compression_ratio_threshold": 2.4,
+    "log_prob_threshold": -1.0,
+    "no_speech_threshold": 0.6,
+    "suppress_blank": true,
+    "suppress_tokens": [
+      -1
+    ],
+    "multilingual": false,
+    "suppress_numerals": false
+  },
+  "vad_options": {
+    "vad_onset": 0.5,
+    "vad_offset": 0.363
+  },
+  "diarize_options": {
+    "threshold": 0.5
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "model": "Qwen/Qwen3-ASR-1.7B",
+  "batch_size": 1,
+  "enable_timestamps": false,
+  "return_segments": true,
+  "language": "yue",
+  "device": "cuda"
+}

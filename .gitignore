@@ -1,0 +1,44 @@
+# ===== 密钥与本地配置（绝对不能上传）=====
+.env
+.env.*
+!.env.example
+.claude/settings.json
+.claude/settings.local.json
+
+# ===== 研究数据（含受访者隐私，绝不公开）=====
+audio/
+raw/
+vad/
+normalized/
+qa/
+*.wav
+*.m4a
+*.mp3
+*.flac
+*.ogg
+*.aac
+*.wma
+*.opus
+
+# ===== Python 缓存与构建产物 =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# ===== 内部文档（仅本地使用，不随开源仓库发布）=====
+CLAUDE.md
+AGENTS.md
+DEVLOG.md
+
+# ===== 误文件 =====
+python
+
+# ===== 系统/编辑器杂项 =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
