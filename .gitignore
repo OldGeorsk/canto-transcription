@@ -42,3 +42,6 @@ python
 Thumbs.db
 .idea/
 .vscode/
+
+# ===== 内部文档目录（仅本地，不发布）=====
+docs/
